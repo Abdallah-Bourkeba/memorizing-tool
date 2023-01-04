@@ -63,6 +63,7 @@ clearBtn.onclick = () => {
     memoContent.innerHTML = "";
     hideBtn.classList.add("disable");
     clearBtn.classList.add("disable");
+    memoContent.focus();
   }
 };
 
