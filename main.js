@@ -94,6 +94,10 @@ document.querySelectorAll("p.content").forEach((ele) => {
   ele.onkeypress = (e) => {
     if (e.key === "Enter") e.preventDefault();
   };
+  ele.onkeydown = (e) => {
+    if ((e.ctrlKey && e.key == "c") || e.key == "v") e.preventDefault();
+  };
+  ele.oncontextmenu = () => false;
 });
 
 document.onkeydown = (e) => {
