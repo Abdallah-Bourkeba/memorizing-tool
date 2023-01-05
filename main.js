@@ -123,7 +123,10 @@ document.onkeydown = (e) => {
 };
 
 function prepareToCompare(text) {
-  return text.toLowerCase().replace(/[^a-zA-Z]/g, "");
+  return text
+    .toLowerCase()
+    .replace(/[^a-zA-Z]/g, "")
+    .replace(/\s/g, "");
 }
 
 function resetCssVars(color = "#2196f3") {
