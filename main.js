@@ -98,7 +98,6 @@ document.querySelectorAll("p.content").forEach((ele) => {
   ele.onkeydown = (e) => {
     if ((e.ctrlKey && e.key == "c") || e.key == "v") e.preventDefault();
   };
-  ele.oncontextmenu = () => false;
 });
 
 document.onkeydown = (e) => {
@@ -121,6 +120,8 @@ document.onkeydown = (e) => {
       break;
   }
 };
+
+document.oncontextmenu = () => false;
 
 function prepareToCompare(text) {
   return text
