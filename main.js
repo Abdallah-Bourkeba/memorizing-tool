@@ -20,8 +20,8 @@ hideBtn.onclick = () => {
 
 compareBtn.onclick = () => {
   if (!compareBtn.classList.contains("disable")) {
-    let memoContentText = prepareToCompare(memoContent.innerHTML);
-    let userInputtText = prepareToCompare(userInput.innerHTML);
+    let memoContentText = prepareToCompare(memoContent.textContent);
+    let userInputtText = prepareToCompare(userInput.textContent);
 
     let audio;
     let color;
